@@ -31,8 +31,8 @@
 		0D6F456C25D31BC20043FFDF /* MovieDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F456B25D31BC20043FFDF /* MovieDetailState.swift */; };
 		0D6F457125D31BFF0043FFDF /* MovieListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F457025D31BFF0043FFDF /* MovieListState.swift */; };
 		0D6F457625D31C5E0043FFDF /* MovieSearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F457525D31C5E0043FFDF /* MovieSearchState.swift */; };
-		0D6F457C25D323D50043FFDF /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D6F457A25D323D50043FFDF /* movie_info.json */; };
-		0D6F457D25D323D50043FFDF /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D6F457B25D323D50043FFDF /* movie_list.json */; };
+		0D6F459025D330F80043FFDF /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D6F458E25D330F80043FFDF /* movie_list.json */; };
+		0D6F459125D330F80043FFDF /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D6F458F25D330F80043FFDF /* movie_info.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +83,8 @@
 		0D6F456B25D31BC20043FFDF /* MovieDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailState.swift; sourceTree = "<group>"; };
 		0D6F457025D31BFF0043FFDF /* MovieListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListState.swift; sourceTree = "<group>"; };
 		0D6F457525D31C5E0043FFDF /* MovieSearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchState.swift; sourceTree = "<group>"; };
-		0D6F457A25D323D50043FFDF /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = movie_info.json; path = Resources/movie_info.json; sourceTree = SOURCE_ROOT; };
-		0D6F457B25D323D50043FFDF /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = movie_list.json; path = Resources/movie_list.json; sourceTree = SOURCE_ROOT; };
+		0D6F458E25D330F80043FFDF /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		0D6F458F25D330F80043FFDF /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +135,9 @@
 		0D5D203925D2F9C800098A2E /* xcswiftapp */ = {
 			isa = PBXGroup;
 			children = (
+				0D6F458A25D330140043FFDF /* Resources */,
 				0D6F450925D310400043FFDF /* Views */,
 				0D6F450625D30FEE0043FFDF /* Services */,
-				0D6F450525D30FE20043FFDF /* Resources */,
 				0D6F450425D30FD40043FFDF /* Models */,
 				0D6F450325D30FC30043FFDF /* Bindings */,
 				0D5D203A25D2F9C800098A2E /* xcswiftappApp.swift */,
@@ -196,15 +196,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		0D6F450525D30FE20043FFDF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0D6F457A25D323D50043FFDF /* movie_info.json */,
-				0D6F457B25D323D50043FFDF /* movie_list.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		0D6F450625D30FEE0043FFDF /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +227,15 @@
 				0D6F451D25D315DF0043FFDF /* ActivityIndicatorView.swift */,
 			);
 			path = UIKitViews;
+			sourceTree = "<group>";
+		};
+		0D6F458A25D330140043FFDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D6F458F25D330F80043FFDF /* movie_info.json */,
+				0D6F458E25D330F80043FFDF /* movie_list.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,8 +342,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5D204225D2F9D200098A2E /* Preview Assets.xcassets in Resources */,
-				0D6F457C25D323D50043FFDF /* movie_info.json in Resources */,
-				0D6F457D25D323D50043FFDF /* movie_list.json in Resources */,
+				0D6F459025D330F80043FFDF /* movie_list.json in Resources */,
+				0D6F459125D330F80043FFDF /* movie_info.json in Resources */,
 				0D5D203F25D2F9D200098A2E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
