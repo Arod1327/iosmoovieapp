@@ -2,15 +2,25 @@
 //  ContentView.swift
 //  xcswiftapp
 //
-//  Created by Roger Santos on 09/02/21.
+//  Created by Andy Chunab on 09/02/21.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView{
+            MovieListView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "tv")
+                        Text("Movies")
+                    }
+            }
+            .tag(0)
+        }
+        //Text("Hello, world!")
+            //.padding()
     }
 }
 

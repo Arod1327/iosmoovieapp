@@ -71,7 +71,7 @@ struct MovieListView: View {
                 
                 
             }
-            .navigationBarTitle("The MovieDb")
+            .navigationBarTitle("PELICULAS")
         }
         .onAppear {
             self.nowPlayingState.loadMovies(with: .nowPlaying)
