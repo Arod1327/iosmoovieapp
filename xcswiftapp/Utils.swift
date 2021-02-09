@@ -1,9 +1,8 @@
 //
 //  Utils.swift
-//  SwiftUIMovieDb
+//  xcswiftapp
 //
-//  Created by Alfian Losari on 23/05/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
+//  Created by Andy Chunab on 09/02/21.
 //
 
 import Foundation
@@ -18,7 +17,7 @@ class Utils {
     }()
     
     static let dateFormatter: DateFormatter = {
-        let dateFormatter = DateFormatter()
+       let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-mm-dd"
         return dateFormatter
     }()

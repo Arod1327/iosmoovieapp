@@ -13,6 +13,7 @@
 		0D5D204225D2F9D200098A2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5D204125D2F9D200098A2E /* Preview Assets.xcassets */; };
 		0D5D204D25D2F9D300098A2E /* xcswiftappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D204C25D2F9D300098A2E /* xcswiftappTests.swift */; };
 		0D5D205825D2F9D300098A2E /* xcswiftappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D205725D2F9D300098A2E /* xcswiftappUITests.swift */; };
+		0D6F450C25D310710043FFDF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F450B25D310710043FFDF /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		0D5D205325D2F9D300098A2E /* xcswiftappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xcswiftappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5D205725D2F9D300098A2E /* xcswiftappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcswiftappUITests.swift; sourceTree = "<group>"; };
 		0D5D205925D2F9D300098A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6F450B25D310710043FFDF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +97,17 @@
 		0D5D203925D2F9C800098A2E /* xcswiftapp */ = {
 			isa = PBXGroup;
 			children = (
+				0D6F450925D310400043FFDF /* Views */,
+				0D6F450625D30FEE0043FFDF /* Services */,
+				0D6F450525D30FE20043FFDF /* Resources */,
+				0D6F450425D30FD40043FFDF /* Models */,
+				0D6F450325D30FC30043FFDF /* Bindings */,
 				0D5D203A25D2F9C800098A2E /* xcswiftappApp.swift */,
 				0D5D203C25D2F9C800098A2E /* ContentView.swift */,
 				0D5D203E25D2F9D200098A2E /* Assets.xcassets */,
 				0D5D204325D2F9D200098A2E /* Info.plist */,
 				0D5D204025D2F9D200098A2E /* Preview Content */,
+				0D6F450B25D310710043FFDF /* Utils.swift */,
 			);
 			path = xcswiftapp;
 			sourceTree = "<group>";
@@ -128,6 +136,49 @@
 				0D5D205925D2F9D300098A2E /* Info.plist */,
 			);
 			path = xcswiftappUITests;
+			sourceTree = "<group>";
+		};
+		0D6F450325D30FC30043FFDF /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		0D6F450425D30FD40043FFDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D6F450525D30FE20043FFDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D6F450625D30FEE0043FFDF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0D6F450925D310400043FFDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D6F450A25D310460043FFDF /* UIKitViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D6F450A25D310460043FFDF /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKitViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +312,7 @@
 			files = (
 				0D5D203D25D2F9C800098A2E /* ContentView.swift in Sources */,
 				0D5D203B25D2F9C800098A2E /* xcswiftappApp.swift in Sources */,
+				0D6F450C25D310710043FFDF /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
