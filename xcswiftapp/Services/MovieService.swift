@@ -33,6 +33,7 @@ enum MovieListEndpoint: String, CaseIterable, Identifiable {
     }
 }
 
+
 enum MovieError: Error, CustomNSError {
     
     case apiError
