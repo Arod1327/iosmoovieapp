@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MovieListView: View {
+    @State private var showingDetail = false
     
     @ObservedObject private var nowPlayingState = MovieListState()
     @ObservedObject private var popularState = MovieListState()
@@ -70,6 +71,16 @@ struct MovieListView: View {
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
             }
             .navigationBarTitle("PELICULAS")
+            .toolbar {
+                Button("LogOut") {
+                    print("Remove UserDefaults")
+                    UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
+                    showingDetail.toggle()
+                }
+                .sheet(isPresented: $showingDetail) {
+                    LoginView()
+                        }
+            }
         }
         .onAppear {
             self.nowPlayingState.loadMovies(with: .nowPlaying)
